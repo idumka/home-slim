@@ -1,0 +1,475 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* amiri-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Amiri';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/amiri-v27-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* amiri-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Amiri';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/amiri-v27-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* alata-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Alata';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/alata-v9-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  html{
+    box-sizing: border-box;
+  }
+
+  *, *::before, *::after{
+    box-sizing: inherit;
+  }
+
+  body {
+    font-family: 'Amiri';
+    font-style: normal;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.2;
+    color: #000;
+  }
+
+  img{
+   max-width: 100%;
+   height: auto;
+  }
+
+ .wrapper {
+   max-width: 1180px;
+   margin: 0 auto;
+
+ }
+
+/*header styles start*/
+
+ .header {
+    background-color:#222224;
+    position:  fixed;
+    top: 0;
+    left: 0;
+    width: 1920px;
+    height: 80px;
+ 
+ }
+
+ .header__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items:flex-end ;
+ }
+
+.header__logo{
+   padding-top: 15px;
+   padding-bottom: 25px;
+}
+
+ .header__logo-pick{
+   width: 255px;
+   height: 40px;
+   margin-right: 85px;
+  
+ }
+
+.header__nav{
+   padding-top: 25px;
+   padding-bottom: 35px;
+}
+
+
+ .header__list {
+    display: flex;
+    flex-wrap: wrap;
+ }
+
+ .header__item {
+    margin-right: 33px;
+ }
+
+ .header__contacts-item {
+    margin-right: 66px;
+ }
+
+ .header__search-link{
+   background-color:#212124;
+   height:35px;
+   width:230px;
+   border-radius:10px;
+   border:2px solid #98451B;
+   margin-right: 168px;
+ }
+
+ .header__item:last-child {
+    margin-right: 0;
+ }
+
+ .header__link {
+    font-family: 'Alata';
+    font-size: 18px;
+    line-height: 21.6px;
+    color: white;
+    text-decoration: none;
+ }
+
+ .header__link:hover, .header__link:focus, .header__link:active{
+    opacity: .75;
+ }
+
+
+
+ /*header styles end*/
+
+ /*header styles start*/
+
+.intro {
+    min-height: 100vh;
+    width: 1920px;
+    height: 850px;
+    background: url(../img/кровать.jpg) no-repeat ;
+    background-size: cover;
+    padding-top: 140px;
+}
+
+.intro__title{
+    font-family: Amiri;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.8px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.intro__header{
+   color: #000;
+   font-family: Amiri;
+   font-size: 36px;
+   font-weight: 700;
+   line-height: 43.2px;
+}
+
+.intro__subtitle{
+   max-width: 500px;
+   color: #000;
+   font-family: Amiri;
+   font-size: 30px;
+   font-weight: 400;
+   line-height: 120%;
+   margin-bottom: 20px;
+}
+
+.intro__subtitle2{
+   width: 425px;
+   height: 45px;
+   color: #000;
+   font-family: Amiri;
+   font-size: 20px;
+   flex-shrink: 0;
+   font-weight: 400;
+   line-height: 24px;
+}
+
+.order__form{
+   margin-left: 10px;
+   margin-top: 5px;
+   color: white;
+   font-family: Alata;
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 21.6px;
+   width: 120px;
+   height: 35px;
+   flex-shrink: 0;
+   border-radius: 10px;
+   border: 2px solid #98451B;
+   background:#222224;
+   text-decoration: none;
+   
+}
+
+.order__form:hover, .order__form:focus, .order__form:active{
+   background: #2f2f3b;
+}
+
+ /*header styles end*/
+
+ /*content style start*/
+
+.content__wrap {
+ width: 1180px;
+ margin-left: 370px;
+ margin-top: 20px;
+}
+
+.content__cards{
+   height: 420px;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-column-gap: 20px;
+}
+
+.content__card{
+   grid-column: span 1;
+}
+
+.content__card-pic{
+   max-width: 280px;
+}
+
+.content__card-thumb{
+   display: block;
+}
+
+.content__card-background{
+   background-color: #f4f4f4;
+}
+
+.content__card-title{
+   color: #000;
+   font-family: Amiri;
+   font-size: 22px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 26.4px;
+   margin-bottom: 6px;
+}
+
+.content__card-desc{
+   color: var(--, #000);
+   font-family: Amiri;
+   font-size: 20px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 24px;
+   margin-bottom: 25px;
+   
+}
+
+.content__card-more{
+   width: 280px;
+   height: 35px;
+   color: #FFF;
+   font-family: Alata;
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 400;
+   border-radius: 10px;
+   border-bottom: 1px solid #E1720C;
+   background: #222224;
+   text-decoration: none;
+   
+}
+
+.content__card-more:hover, .content__card-more:focus, .content__card-more:active{
+   background: #2f2f3b;
+}
+
+
+.content3{
+   max-width: 1160px;
+   height: auto;
+   margin-top: 100px;
+   margin-left: 370px;
+   background: url(../img/Mask\ group.png);
+   padding-top: 530px;
+}
+
+.content3__wrap-title{
+   border-right: 1px solid #fff;
+   border-top: 1px solid #fff;
+   border-radius: 0 100px;
+   width: 420px;
+   height: 220px;
+   background: #434343;
+   
+}
+
+.content3__title{
+   font-family: var(--third-family);
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 120%;
+   color: #fff;
+}
+
+.content3__text{
+   width: 350px;
+   height: 120px;
+   margin-left: 10px;
+   margin-top: 10px;
+   font-weight: 400;
+   font-size: 24px;
+   color: #fff;
+}
+
+.content3__card-more{
+   width: 120px;
+   height: 35px;
+   font-family: Alata;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 21.6px;
+   color: #fff;
+   border-radius: 10px;
+   border: 2px solid #98451B;
+   background:  #222224;
+   position: absolute;
+   margin-left: 290px;
+   margin-top: 35px;
+   text-decoration: none;
+
+}
+
+.content3__card-more:hover, .content3__card-more:focus, .content3__card-more:active{
+   background: #2f2f3b;
+}
+
+
+ /*content style end*/
+
+ /*footer style start*/
+
+.footer__content{
+   margin-top: 150px;
+width:1920px;
+height:450px;
+position:absolute;
+background-color: #222224;
+}
+
+.content__footer{
+   width: 1180px;
+   height: 450px;
+   margin-left: 370px;
+   background: url(../img/spalnya_pod_derevo.png);
+}
+
+.footer__wrap{
+   padding-left: 15px;
+}
+
+.footer__head{
+   font-weight: 600;
+   font-size: 48px;
+   color: #fff;
+   padding-top: 40px;
+   font-family: Amiri;
+}
+
+.footer__nav{
+   padding-top: 40px;
+}
+
+.footer__list{
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.footer__item1{
+   color: #fff;
+   font-size: 20px;
+   font-family: Amiri;
+   margin-right: 15px;
+}
+.footer__item2{
+   color: #fff;
+   font-size: 20px;
+   font-family: Amiri;
+   margin-right: 120px;
+}
+.footer__item3{
+   color: #fff;
+   font-size: 20px;
+   font-family: Amiri;
+   margin-right: 50px;
+}
+.footer__item4{
+   color: #fff;
+   font-size: 20px;
+   font-family: Amiri;
+} 
+
+.button__footer-paddings{
+   padding-top: 15px;
+}
+
+.button__footer{
+   background-color: #222224;
+   border-style: none;
+   border-radius: 50px;
+}
+
+.button__footer1{
+   background-color: #222224;
+   border-style: none;
+   margin-right: 55px;
+   border-radius: 50px;
+}
+
+.button__footer:hover, .button__footer:focus, .button__footer:active{
+background: #2f2f3b;
+}
+
+.button__footer1:hover, .button__footer1:focus, .button__footer1:active{
+   background: #2f2f3b;
+   }
+   
+
+ /*footer style end*/
